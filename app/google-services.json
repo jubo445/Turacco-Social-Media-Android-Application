@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "314775214675",
+    "firebase_url": "https://social-media-e288b-default-rtdb.firebaseio.com",
+    "project_id": "social-media-e288b",
+    "storage_bucket": "social-media-e288b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314775214675:android:55a182e621773072e3c4a6",
+        "android_client_info": {
+          "package_name": "com.example.socialmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314775214675-eubvc99g8scaqa6tgso6kdqs9qkimacg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOaZdfAlwS0hIYx6bey5lNp-cC_YCsOS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314775214675-eubvc99g8scaqa6tgso6kdqs9qkimacg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

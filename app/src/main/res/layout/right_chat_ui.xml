@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_alignParentEnd="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_margin="3dp"
+            android:visibility="gone"
+            android:src="@drawable/profile"
+            android:id="@+id/userProfile"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/textMessage"
+           android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/right_back"
+            android:text="Hey!!! How are you?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

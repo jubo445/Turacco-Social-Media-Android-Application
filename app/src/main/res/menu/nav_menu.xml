@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+
+        android:icon="@drawable/ic_baseline_dynamic_feed_24"
+        android:id="@+id/feeds"
+        android:title="Feeds"
+
+        />
+
+    <item
+
+        android:icon="@drawable/ic_baseline_group_24"
+        android:id="@+id/followers"
+        android:title="Followers"
+
+        />
+
+    <item
+        android:id="@+id/chip3"
+        android:title=""
+
+        />
+    <item
+
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:id="@+id/notification"
+        android:title="Notification"
+
+        />
+    <item
+
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profile"
+        android:title="Profile"
+
+        />
+
+</menu>

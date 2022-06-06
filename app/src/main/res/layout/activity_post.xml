@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PostActivity">
+
+    <ImageView
+
+        android:id="@+id/postImg"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_gallery"
+        android:layout_height="250dp"/>
+
+    <EditText
+        android:layout_margin="9dp"
+        android:hint="@string/app_name"
+        android:id="@+id/postEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/postSubmit"
+        android:layout_margin="9dp"
+        android:text="Post Now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

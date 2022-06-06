@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FriendsFragment">
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:queryBackground="@android:color/transparent"
+        app:queryBackground="@android:color/transparent"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/searcview_background"
+        android:queryHint="Search For People"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecycler"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_user"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

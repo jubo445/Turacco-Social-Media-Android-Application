@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true">
+
+    <RelativeLayout
+        android:id="@+id/headContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:fontFamily="@font/poppins_medium"
+            android:text="User Name"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/profile_pic"
+            android:fontFamily="@font/poppins_regular"
+            android:text="a few seconds ago"
+            android:textColor="#989898"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/postDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:layout_marginTop="2dp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Post Description in short modes"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/token"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="1sp" />
+
+
+    <LinearLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/mediaViewer"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+         />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/reactBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ic_heart_outlined"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/likeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/commentBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_new_chat"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:id="@+id/commentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/shareBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/share"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="0"
+            android:textColor="#7A8FA6"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:gravity="end"
+         android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

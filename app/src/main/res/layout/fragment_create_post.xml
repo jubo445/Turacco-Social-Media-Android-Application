@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:src="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:text="Mr. Dummy"
+                    android:textColor="@color/grey_800"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:boxStrokeColor="@color/grey_800"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="top|start"
+                    android:hint="Share Your Experience Or Your Opinion"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="@dimen/_4sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="normal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/addImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_outline_add_a_photo_24"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:focusable="true"
+                    android:fontFamily="@font/raleway_medium"
+                    android:padding="8dp"
+                    android:text="Add A Photo"
+                    android:textColor="@color/grey_600"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imagePreView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+
+            <Spinner
+                android:id="@+id/resturantSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:padding="16dp"
+                android:visibility="gone"
+                app:fontFamily="@font/regular_bala_paji"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/create_post_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_25sdp"
+                android:backgroundTint="@color/purple_200"
+                android:fontFamily="@font/raleway_bold"
+                android:insetBottom="0dp"
+                android:textColor="@color/white"
+                android:text="Create Post"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfile"
+            android:layout_width="60dp"
+            android:src="@drawable/turaco"
+            android:layout_margin="15dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/userProfile"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="Jubayer Ahmed"
+            android:textColor="#424040"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/userProfile"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins_regular"
+            android:text="9273543782"
+            android:textColor="#424040"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_toRightOf="@id/userProfile"
+            android:includeFontPadding="false"
+            android:text="jubayer@gmail.com"
+            android:textColor="#424040"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/chatIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_below="@id/email"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/userProfile"
+            android:src="@drawable/ic_chat" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

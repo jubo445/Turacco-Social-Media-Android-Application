@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/topLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:src="@drawable/profile"
+                android:id="@+id/topProfile"
+                android:layout_margin="8dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:text="User Name"
+                android:layout_toRightOf="@id/topProfile"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#151515"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/topLay"
+
+            android:id="@+id/contentLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/postText"
+
+                android:textColor="@color/black"
+                android:text="Is there anyone who doesn't love listening to stories? Right from our toddler days, we humans have this insatiable craving for tales, of the known and the unknown, that is satisfied first by our parents and then a plethora of other sources. Go through a host of fascinating stories from KidsGen, including fables and fairytales, moral stories, short stories, mythological stories, classic stories and your favourite - animal stories. If you love reading these interesting stories for kids, click here and share them with all your young friends. Have an enjoyable time!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"
+                android:layout_below="@id/postText"
+                android:src="@drawable/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

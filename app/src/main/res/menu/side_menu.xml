@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:showAsAction="always">
+
+    <group android:checkableBehavior="single"
+        app:showAsAction="always">
+
+        <item
+            android:id="@+id/my_profile"
+            app:showAsAction="always"
+            android:icon="@drawable/male_user"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/my_msg"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_baseline_message_24"
+            android:title="My Message" />
+
+        <item
+            android:id="@+id/my_notificaiton"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            android:title="My Notification" />
+
+
+    </group>
+
+
+    <item android:title="Medical Support">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+
+    <item android:title="Other">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+
+
+
+                <item
+                    android:id="@+id/contact"
+                    android:icon="@drawable/terms"
+                    android:title="Terms&amp;Conditions" />
+
+                <item
+                    app:showAsAction="always"
+                    android:id="@+id/log_out"
+                    android:icon="@drawable/login"
+                    android:title="Log Out" />
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

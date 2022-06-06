@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginBottom="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+
+    android:layout_alignParentEnd="true"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+        <!-- Add your target layout here -->
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:layout_width="wrap_content"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:background="@drawable/my_msg"
+        android:backgroundTint="@color/greyish"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/msgTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:clickable="true"
+            android:visibility="visible"
+            android:focusable="true"
+            android:linksClickable="true"
+            android:maxWidth="@dimen/_180sdp"
+            android:padding="@dimen/_8sdp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+        <com.joooonho.SelectableRoundedImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="@dimen/_300sdp"
+            android:adjustViewBounds="true"
+
+            app:sriv_left_top_corner_radius="@dimen/_16sdp"
+            app:sriv_right_top_corner_radius="@dimen/_16sdp"
+            app:sriv_left_bottom_corner_radius="@dimen/_16sdp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            android:maxWidth="@dimen/_200sdp"
+            android:id="@+id/image"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_toEndOf="@+id/container"
+        android:fontFamily="@font/nunito_regular"
+        android:text="11:40 pm"
+        android:visibility="invisible"
+        android:textSize="12sp"
+
+        />
+
+
+
+
+</RelativeLayout>

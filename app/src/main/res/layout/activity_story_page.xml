@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <pt.tornelas.segmentedprogressbar.SegmentedProgressBar
+        android:id="@+id/spb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginVertical="@dimen/_2sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:segmentBackgroundColor="#88000000"
+        app:segmentSelectedBackgroundColor="@color/white"
+        app:segmentStrokeColor="@android:color/transparent"
+        app:segmentSelectedStrokeColor="@android:color/transparent"
+        app:segmentStrokeWidth="1dp"
+        app:segmentCornerRadius="2dp"
+        app:segmentMargins="@dimen/default_segment_margin"
+        app:totalSegments="1"
+        app:timePerSegment="5000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/cross"
+        android:background="@drawable/ic_baseline_close_24"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_22sdp"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>
